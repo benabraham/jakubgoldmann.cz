@@ -1,0 +1,62 @@
+{
+  "name": "MyFirstWebsite",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benabraham/bs4-nodejs-static"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "bootstrap": "4.5.2",
+    "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-twig": "^1.2.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-uncss": "^0.17.0",
+    "prettier": "2.0.5",
+    "surge": "^0.21.6",
+    "uncss": "^0.17.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp develop",
+    "build": "gulp build",
+    "deploy": "gulp build && surge dist --domain \"https://my-first-website.surge.sh\""
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "printWidth": 120,
+    "overrides": [
+      {
+        "files": "*.json",
+        "options": {
+          "tabWidth": 2
+        }
+      }
+    ]
+  },
+  "author": "Daniel Srb",
+  "license": "MIT",
+  "description": "A basic template to start a website based on Bootstrap",
+  "dependencies": {},
+  "browserslist": [
+    ">= 1%",
+    "last 1 major version",
+    "not dead",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ]
+}
