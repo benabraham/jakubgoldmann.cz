@@ -1,0 +1,281 @@
+::selection {
+    background-color: $primary;
+    color: $white;
+}
+
+.container,
+.container-xs,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    display: flow-root;
+}
+
+h1,
+.h1 {
+    letter-spacing: 0.002em;
+    line-height: 1.25;
+
+    font-size: 0.55 * $h1-font-size;
+
+    @include media-breakpoint-up(xs) {
+        font-size: calc(2.29rem + 3vw);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: $h1-font-size;
+    }
+}
+
+h2,
+.h2,
+blockquote {
+    margin-top: map-get($spacers, 47);
+    font-size: 0.6875 * $h2-font-size;
+
+    @include media-breakpoint-up(xs) {
+        font-size: calc(1.125rem + 1vw);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: $h2-font-size;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 0.9 * $h3-font-size;
+
+    @include media-breakpoint-up(xs) {
+        font-size: calc(1.0625rem + 0.19vw);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: $h3-font-size;
+    }
+}
+
+
+p,
+ul {
+    font-size: 0.9 * $font-size-base;
+
+    @include media-breakpoint-up(xs) {
+        font-size: calc(1.0625rem + 0.19vw);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: $font-size-base;
+    }
+}
+
+.C-list-bullets {
+    padding-left: 1rem;
+}
+
+.C-list-bullets > li {
+    list-style-type: none;
+    position: relative;
+    padding-left: map-get($spacers, 20);
+    margin-bottom: map-get($spacers, 10);
+}
+
+li::before {
+    content: "●";
+    position: absolute;
+    top: map-get($spacers, 15);
+    left: - map-get($spacers, 30);
+    font-size: 0.75rem;
+    color: $black;
+}
+
+blockquote {
+    color: $black;
+    font-style: italic;
+    margin-right: map-get($spacers, 10);
+    margin-left: map-get($spacers, 10);
+
+    &::after {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 35px;
+        background-image: url(/img/quotation-mark.min.svg);
+        color: $gray-400;
+        margin-top: 12px;
+    }
+}
+
+
+.C-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: map-get($spacers, 40);
+
+    @include media-breakpoint-up(md) {
+        margin-left: 0;
+    }
+}
+
+.C-buttons-button {
+    flex-basis: auto;
+    flex-grow: 1;
+    margin: map-get($spacers, 30);
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(sm) {
+        flex-grow: 0;
+        padding-right: map-get($spacers, 47);
+        padding-left: map-get($spacers, 47);
+    }
+}
+
+.btn-outline-secondary {
+    border-color: $C-gray-450;
+
+    @include hover-focus() {
+        color: $black;
+        border-color: $C-gray-450;
+        background-color: $C-gray-450;
+    }
+}
+
+.C-portrait {
+    overflow: hidden;
+    //padding-top: map-get($spacers, 20);
+}
+
+.C-portrait-image {
+    width: 510px;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.10);
+    transform-origin: 50% 30%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-breakpoint-up(md) {
+        transform: none;
+    }
+
+}
+
+.C-logos-link {
+    display: block;
+}
+
+.C-logos-logo {
+    display: block;
+    margin: map-get($spacers, 40) auto;
+    position: relative;
+    left: - map-get($spacers, 30);
+
+    &-heureka {
+        width: 45%;
+    }
+
+    &-seznam {
+        width: 50%;
+    }
+
+    &-aktualne {
+        width: 45%;
+    }
+
+    &-forbes {
+        width: 37%;
+    }
+}
+
+.C-btn-icon {
+    width: 7.5 * $spacer;
+    height: 4 * $spacer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+
+    &-phone {
+        background-image: url(/img/icon-phone.min.svg);
+    }
+
+    &-envelope {
+        background-image: url(/img/icon-envelope.min.svg);
+    }
+}
+
+
+.C-socnets {
+    margin-bottom: map-get($spacers, 40);
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 0.9 * $font-size-base;
+
+    @include media-breakpoint-up(xs) {
+        font-size: calc(1.0625rem + 0.19vw);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: $font-size-base;
+    }
+
+    &-socnet {
+        flex: 1 1 10rem;
+        $icon-size: 1.75rem;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-size: $icon-size;
+        padding-left: 1.5 * $icon-size;
+        padding-top: map-get($spacers, 20);
+        padding-bottom: map-get($spacers, 20);
+        margin-bottom: map-get($spacers, 20);
+        margin-top: map-get($spacers, 20);
+
+        &-linkedin {
+            background-image: url(/img/icon-linkedin.min.svg);
+        }
+
+        &-twitter {
+            background-image: url(/img/icon-twitter.min.svg);
+        }
+
+        &-instagram {
+            background-image: url(/img/icon-instagram.min.svg);
+        }
+    }
+
+}
+
+.C-external-links {
+    background-color: $light;
+    padding-bottom: map-get($spacers, 40);
+
+    h2,
+    h3 {
+        color: $dark;
+    }
+
+    ul {
+        @extend .list-unstyled;
+        font-size: $font-size-sm;
+    }
+
+    li {
+        margin-bottom: map-get($spacers, 20);
+    }
+
+    li > strong {
+        font-size: $font-size-base;
+        font-weight: $font-weight-normal;
+        display: block;
+        margin-top: map-get($spacers, 25);
+        margin-bottom: map-get($spacers, 25);
+    }
+
+    a {
+        display: block;
+    }
+}

@@ -1,17 +1,257 @@
-{% extends '_base.twig' %}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Jakub Goldmann</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEPQWBK442"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-{% block title %}Index page{% endblock %}
+        gtag("js", new Date());
+        gtag("config", "G-VEPQWBK442");
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e7409a">
+    <meta name="msapplication-TileColor" content="#e7409a">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
 
-
-{% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col p-4">
-                <p class="display-1">It works!</p>
-                <h1>This a basic template to start a website based on Bootstrap&nbsp;{{ bootstrapVersion }}</h1>
-                <p>Also check out <a href="example-page-1" class="btn btn-success btn-lg">Example page 1</a> and <a href="example-page-2" class="btn btn-danger btn-lg">Example page 2</a>.</p>
-            </div>
+<header class="container-md px-0">
+    <div class="m-47">
+        <h1>Jakub Goldmann</h1>
+        <p class="h2 mb-30">Produktový analytik a digitální designer</p>
+        <div class="C-buttons">
+            <a class="btn btn-primary C-buttons-button" href="#omne">Více o mě</a>
+            <a class="btn btn-outline-secondary C-buttons-button" href="#kontakt">Chci jen kontakt</a>
         </div>
     </div>
-{% endblock %}
+    <div class="C-portrait">
+        <img
+            src="/img/jakub-goldmann-stojici.png"
+            alt="Jakub Goldmann hledí vpřed"
+            class="C-portrait-image"
+        />
+    </div>
+</header>
+
+<section id="omne" class="bg-light">
+    <div class="container-md">
+        <h2>Co všechno dělám?</h2>
+        <p><b>Strategické konzultace, produktovou analýzu a digitální design.</b></p>
+        <p>Zaměřuju se na nezávislý audit webů i mobilních aplikací a hledám odpovědi na strategické otázky týkající se business modelu a produktových propozic.</p>
+        <p>Mám za sebou přes 15 let zkušeností a stovky úspěšných realizací.</p>
+
+        <blockquote>Lidé na internetu nehledají webové stránky, ale odpovědi na otázky. Dejte jim je.</blockquote>
+
+        <h2>Jak to dělám?</h2>
+        <p>Na začátku všech digitálních projektů procházím detailní výzkumnou fází, ve které postupuju podle osvědčených metodik. Využívám především kombinaci stakeholder interviews, polostrukturovaných rozhovorů a analýz dat, které má klient k dispozici.</p>
+
+        <h2>Kde to dělám?</h2>
+        <p>Ve specializované <a href="https://www.svejda-goldmann.cz/">digitální agentuře</a>, kterou vedu spolu s kolegou <b>Davidem Švejdou</b>. Spolupracujeme jak s velkými korporátními klienty, tak i startupy, a <b>zaměřujeme se na</b>:</p>
+        <ul class="C-list-bullets">
+            <li>user research, praktické analýzy, oponentura zadání,</li>
+            <li>prototypování, UX/UI design,</li>
+            <li>produktový management, navrhování a vyhodnocování testů.</li>
+        </ul>
+
+        <h2 class="mb-10">Pro koho jsem už dělal?</h2>
+        <div class="row pb-30">
+            <a class="col-12 C-logos-link" href="https://www.heureka.cz">
+                <img class="img-fluid C-logos-logo C-logos-logo-heureka" src="/img/logo-heureka.min.svg" alt="Heuréka">
+            </a>
+            <a class="col-12 C-logos-link" href="https://www.seznam.cz">
+                <img class="img-fluid C-logos-logo C-logos-logo-seznam" src="/img/logo-seznam.min.svg" alt="Seznam.cz">
+            </a>
+            <a class="col-12 C-logos-link" href="https://www.aktualne.cz">
+                <img class="img-fluid C-logos-logo C-logos-logo-aktualne" src="/img/logo-aktualne.min.svg" alt="Aktuálně.cz">
+            </a>
+            <a class="col-12 C-logos-link" href="https://forbes.cz">
+                <img class="img-fluid C-logos-logo C-logos-logo-forbes" src="/img/logo-forbes.min.svg" alt="Forbes">
+            </a>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container-md px-0">
+            <div class="px-40 mb-40">
+                <h2>Co byste ještě měli vědět?</h2>
+                <p>Vedl jsem tým návrhářů v Seznam.cz, aktuálně vedu <a href="https://svejda-goldmann.cz/mentoring">mentoringy</a> a <a href="https://kme.vse.cz/o-katedre/katedra/lide/">učím v Praze na VŠE</a>. Účast ve start-upu GoodData posílila můj vztah k práci s daty a zajistila cenný produktový nadhled. Hodně a rád čtu a o knihách i píšu, hlavně do <a href="http://www.logrmagazin.cz/">magazínu Lógr</a>.</p>
+            </div>
+            <img src="/img/jakub-goldmann-sedici.png" alt="Jakub Goldmann mluví do mikrofonu" class="img-fluid d-block">
+        </div>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="container-md">
+        <h2 class="mt-40">Jak mě kontaktovat?</h2>
+        <p class="d-flex justify-content-center mt-40 mb-47">
+            <a class="C-btn-icon C-btn-icon-phone btn btn-primary mr-30" href="tel:+420777907719">
+                <span class="sr-only">+420777907719</span>
+            </a>
+            <a class="C-btn-icon C-btn-icon-envelope btn btn-outline-secondary" href="mailto:jakub.goldmann@gmail.com">
+                <span class="sr-only">jakub.goldmann@gmail.com</span>
+            </a>
+        </p>
+
+        <h3 class="mb-0">Fakturační údaje</h3>
+        <p>
+            Švejda Goldmann, s. r. o.
+            <br>Pernerova 293/11
+            <br>186 00 Praha 8 - Karlín
+        </p>
+        <p>
+            <b>IČ:</b> 04888189
+            <br><b>DIČ:</b> CZ04888189
+        </p>
+        <p><b>Bankovní spojení:</b> 2700976062/2010</p>
+    </div>
+</section>
+
+<section>
+    <div class="container-md">
+        <h2 class="mt-40">Na jakých sítích mě najdete?</h2>
+        <div class="C-socnets">
+            <a class="C-socnets-socnet C-socnets-socnet-linkedin" href="https://www.linkedin.com/in/jakubgoldmann/">LinkedIn</a>
+            <a class="C-socnets-socnet C-socnets-socnet-twitter" href="https://twitter.com/Siderro">Twitter</a>
+            <a class="C-socnets-socnet C-socnets-socnet-instagram" href="https://www.instagram.com/svejdagoldmann/">Instagram</a>
+        </div>
+    </div>
+</section>
+
+<section class="C-external-links">
+    <div class="container-md">
+        <h2>Chcete se o mě ještě něco dozvědět?</h2>
+
+        <h3>Goldmann / Švejda Goldmann</h3>
+
+        <ul>
+            <li>
+                Mediaguru.cz
+                <a href="https://www.mediaguru.cz/clanky/2019/09/aktualne-cz-redesignoval-sve-webove-stranky/">
+                    Aktuálně.cz redesignoval své webové stránky
+                </a>
+            </li>
+            <li>
+                Mediar.cz
+                <a href="https://www.mediar.cz/aktualne-cz-redesignuje-se-svejdou-a-goldmannem/">
+                    Aktuálně.cz redesignuje se Švejdou a Goldmannem
+                </a>
+            </li>
+            <li>
+                <strong>
+                    Forbes.cz
+                    <a href="https://www.forbes.cz/grafiku-nikdy-nestudovali-dnes-delaji-weby-pro-uspesne-ceske-firmy/">
+                        Grafiku nikdy nestudovali, dnes dělají weby pro úspěšné české firmy
+                    </a>
+                </strong>
+            </li>
+            <li>
+                <strong>
+                    Mediar.cz
+                    <a href="https://www.mediar.cz/jak-designem-podporit-ctenost-a-odlisnost-medii/">
+                        Jak designem podpořit čtenost a odlišnost médií
+                    </a>
+                </strong>
+            </li>
+            <li>
+                <strong>
+                    Forbes.cz
+                    <a href="https://www.forbes.cz/proc-a-jak-jsme-udelali-novy-forbes-cz/">
+                        Proč a jak jsme udělali nový Forbes.cz
+                    </a>
+                </strong>
+            </li>
+            <li>
+                Tyinternety.cz
+                <a href="https://tyinternety.cz/startupy/jak-se-dela-fintech-v-cesku-co-podle-designeru-potrebuje-projekt-aby-uspel/">
+                    Jak se dělá fintech v Česku: Co podle designérů potřebuje projekt, aby uspěl
+                </a>
+            </li>
+            <li>
+                <strong>
+                    Články, rozhovory, case studies…
+                    <a href="https://medium.com/svejda-goldmann-webdesign">
+                        Medium.com / Blog Švejda–Goldmann
+                    </a>
+                </strong>
+            </li>
+            <li>
+                Czechdesign.cz
+                <a href="https://www.czechdesign.cz/temata-a-rubriky/rozhovor-zapixely-jakub-goldmann">
+                    Rozhovor #zapixely: Jakub Goldmann
+                </a>
+            </li>
+            <li>
+                Blog / Cyrkl.cz
+                <a href="https://www.cyrkl.cz/jak-jsme-designovali-webovou-platformu-na-miru-odpadu">
+                    Jak jsme designovali webovou platformu na míru odpadu
+                </a>
+            </li>
+            <li>
+                Mediar.cz
+                <a href="https://www.mediar.cz/rubriky-jsou-zlo-dalsi-rady-navrhare-uspesneho-redesignu-super-cz/">
+                    Rubriky jsou zlo…
+                </a>
+            </li>
+            <li>
+                Czechcrunch.cz
+                <a href="https://www.czechcrunch.cz/2019/08/hlidaci-pes-pro-vyhodne-letenky-ceska-sluzba-flightor-funguje-jako-agregator-nejvyhodnejsich-letenek/">
+                    Hlídací pes pro výhodné cestování. Česká služba Flightor funguje jako agregátor nejvýhodnějších letenek z celého světa
+                </a>
+            </li>
+            <li>
+                Pelipecky.sk
+                <a href="https://pelipecky.sk/flightor-rozhovor-letenky/">
+                    LETENKY Ide o jediný web, ktorý sleduje lacné letenky z celého sveta, hovoria zakladatelia Flightoru
+                </a>
+            </li>
+            <li>
+                Svetandroida.cz
+                <a href="https://www.svetandroida.cz/flightor-levne-letenky/">
+                    Kde koupit zaručeně nejlevnější letenky?
+                </a>
+            </li>
+            <li>
+                Marianne.cz
+                <a href="https://www.marianne.cz/clanek/hon-na-levne-letenky-kde-sezenete-akcni-lety">
+                    Hon na levné letenky! Kde seženete akční lety?
+                </a>
+            </li>
+            <li>
+                Flowee.cz
+                <a href="https://www.flowee.cz/floweecity/smart-cities/7243-kolik-by-mohla-praha-vydelat-na-pronajmu-mobiliare-urcite-vic-nez-ted-tvrdi-marketeri">
+                    Kolik by mohla Praha vydělat na pronájmu mobiliáře? Určitě víc než teď, tvrdí marketéři
+                </a>
+            </li>
+            <li>
+                Forbes
+                <a href="https://www.forbes.cz/jak-byste-prodali-cesko-reklamni-profici-o-tom-co-je-na-nasi-zemi-nejlepsi/">
+                    Jak byste prodali Česko…
+                </a>
+            </li>
+            <li>
+                Blesk.cz
+                <a href="https://www.blesk.cz/clanek/regiony-praha-praha-zpravy/631647/tri-carky-za-pul-mega-lidi-bavi-nove-logo-prahy-3-pripomina-pry-listek-z-hospody-i-lajny-kokainu.html">
+                    „Tři čárky za půl mega?“
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
