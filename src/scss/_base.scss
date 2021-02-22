@@ -32,7 +32,7 @@ h1,
 h2,
 .h2,
 blockquote {
-    margin-top: map-get($spacers, 47);
+    margin-top: map-get($spacers, 45);
     font-size: 0.6875 * $h2-font-size;
 
     @include media-breakpoint-up(xs) {
@@ -112,7 +112,7 @@ blockquote {
 .C-buttons {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: map-get($spacers, 40);
+    margin-bottom: map-get($spacers, 33);
 
     @include media-breakpoint-up(md) {
         margin-left: 0;
@@ -127,8 +127,8 @@ blockquote {
 
     @include media-breakpoint-up(sm) {
         flex-grow: 0;
-        padding-right: map-get($spacers, 47);
-        padding-left: map-get($spacers, 47);
+        padding-right: map-get($spacers, 45);
+        padding-left: map-get($spacers, 45);
     }
 }
 
@@ -144,7 +144,6 @@ blockquote {
 
 .C-portrait {
     overflow: hidden;
-    //padding-top: map-get($spacers, 20);
 }
 
 .C-portrait-image {
@@ -169,7 +168,7 @@ blockquote {
 
 .C-logos-logo {
     display: block;
-    margin: map-get($spacers, 40) auto;
+    margin: map-get($spacers, 33) auto;
     position: relative;
     left: - map-get($spacers, 30);
 
@@ -208,7 +207,7 @@ blockquote {
 
 
 .C-socnets {
-    margin-bottom: map-get($spacers, 40);
+    margin-bottom: map-get($spacers, 33);
     display: flex;
     flex-wrap: wrap;
 
@@ -251,7 +250,7 @@ blockquote {
 
 .C-external-links {
     background-color: $light;
-    padding-bottom: map-get($spacers, 40);
+    padding-bottom: map-get($spacers, 33);
 
     h2,
     h3 {

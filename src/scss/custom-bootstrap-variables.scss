@@ -194,20 +194,24 @@ $C-gray-650: null;
 
     // uncomment whole block, the following variable uses map-merge(),
     // so you can define only new ones you need
-    $spacers: ();
-
     $spacers: (
-        0: 0,
-        10: ($spacer * .25), // 4px
-        15: ($spacer * .375), // 6px
-        20: ($spacer * .5), // 8px
-        25: ($spacer * .75), // 12px
-        30: $spacer, // 16px
-        35: ($spacer * 1.25), // 20px
-        40: ($spacer * 1.5), // 24px
-        47: ($spacer * 2.5), // 40px
-        50: ($spacer * 3), // 48px
-        60: ($spacer * 6) // 96px
+        0:  0,
+        5:  ($spacer * 0.125), // 2px
+        10: ($spacer * 0.25),  // 4px
+        15: ($spacer * 0.375), // 6px
+        20: ($spacer * 0.5),   // 8px
+        25: ($spacer * 0.75),  // 12px
+        30: ($spacer * 1),     // 16px
+        33: ($spacer * 1.25),  // 20px
+        35: ($spacer * 1.5),   // 24px
+        40: ($spacer * 2),     // 32px
+        45: ($spacer * 2.5),   // 40px
+        50: ($spacer * 3),     // 48px
+        55: ($spacer * 4),     // 64px
+        60: ($spacer * 5),     // 80px
+        65: ($spacer * 6.5),   // 104px
+        70: ($spacer * 8),     // 128px
+        75: ($spacer * 10.5)   // 168px
     );$spacers: $spacers !global;
 
 
