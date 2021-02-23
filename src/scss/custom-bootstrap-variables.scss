@@ -467,7 +467,7 @@ $C-gray-650: null;
     // $input-btn-line-height: $line-height-base; $input-btn-line-height: $input-btn-line-height !global; // $line-height-base
 
     // $input-btn-focus-width: .2rem; $input-btn-focus-width: $input-btn-focus-width !global; // .2rem
-    // $input-btn-focus-color: rgba($component-active-bg, .25); $input-btn-focus-color: $input-btn-focus-color !global; // rgba($component-active-bg, .25)
+    $input-btn-focus-color: rgba($primary, .25); $input-btn-focus-color: $input-btn-focus-color !global; // rgba($component-active-bg, .25)
     // $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color; $input-btn-focus-box-shadow: $input-btn-focus-box-shadow !global; // 0 0 0 $input-btn-focus-width $input-btn-focus-color
 
     // $input-btn-padding-y-sm: .25rem; $input-btn-padding-y-sm: $input-btn-padding-y-sm !global; // .25rem

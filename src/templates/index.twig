@@ -29,26 +29,27 @@
 </head>
 <body>
 
-<header class="container-md px-0">
-    <div class="m-45">
-        <h1>Jakub Goldmann</h1>
-        <p class="h2 mb-30">Produktový analytik a digitální designer</p>
-        <div class="C-buttons">
-            <a class="btn btn-primary C-buttons-button" href="#omne">Více o mě</a>
-            <a class="btn btn-outline-secondary C-buttons-button" href="#kontakt">Chci jen kontakt</a>
-        </div>
+<header class="container-fluid px-0">
+    <div class="C-header">
+
+    <h1 class="C-header-heading">Jakub Goldmann</h1>
+    <p class="C-header-subheading h2">Produktový analytik a digitální designer</p>
+    <div class="C-header-buttons">
+        <a class="btn btn-primary C-header-button" href="#omne">Více o mě</a>
+        <a class="btn btn-outline-secondary C-header-button" href="#kontakt">Chci jen kontakt</a>
     </div>
-    <div class="C-portrait">
+    <div class="C-header-portrait">
         <img
             src="/img/jakub-goldmann-stojici.png"
             alt="Jakub Goldmann hledí vpřed"
-            class="C-portrait-image"
+            class="C-header-image"
         />
+    </div>
     </div>
 </header>
 
 <section id="omne" class="bg-light">
-    <div class="container-md">
+    <div class="container-fluid C-container-narrow">
         <h2>Co všechno dělám?</h2>
         <p><b>Strategické konzultace, produktovou analýzu a digitální design.</b></p>
         <p>Zaměřuju se na nezávislý audit webů i mobilních aplikací a hledám odpovědi na strategické otázky týkající se business modelu a produktových propozic.</p>
@@ -68,42 +69,42 @@
         </ul>
 
         <h2 class="mb-10">Pro koho jsem už dělal?</h2>
-        <div class="row pb-30">
-            <a class="col-12 C-logos-link" href="https://www.heureka.cz">
+        <div class="C-logos">
+            <a class="C-logos-link" href="https://www.heureka.cz">
                 <img class="img-fluid C-logos-logo C-logos-logo-heureka" src="/img/logo-heureka.min.svg" alt="Heuréka">
             </a>
-            <a class="col-12 C-logos-link" href="https://www.seznam.cz">
+            <a class="C-logos-link" href="https://www.seznam.cz">
                 <img class="img-fluid C-logos-logo C-logos-logo-seznam" src="/img/logo-seznam.min.svg" alt="Seznam.cz">
             </a>
-            <a class="col-12 C-logos-link" href="https://www.aktualne.cz">
+            <a class="C-logos-link" href="https://www.aktualne.cz">
                 <img class="img-fluid C-logos-logo C-logos-logo-aktualne" src="/img/logo-aktualne.min.svg" alt="Aktuálně.cz">
             </a>
-            <a class="col-12 C-logos-link" href="https://forbes.cz">
+            <a class="C-logos-link" href="https://forbes.cz">
                 <img class="img-fluid C-logos-logo C-logos-logo-forbes" src="/img/logo-forbes.min.svg" alt="Forbes">
             </a>
         </div>
     </div>
 
     <div class="bg-white">
-        <div class="container-md px-0">
-            <div class="px-35 mb-35">
+        <div class="container-fluid C-container-narrow">
+            <div class="mb-35">
                 <h2>Co byste ještě měli vědět?</h2>
                 <p>Vedl jsem tým návrhářů v Seznam.cz, aktuálně vedu <a href="https://svejda-goldmann.cz/mentoring">mentoringy</a> a <a href="https://kme.vse.cz/o-katedre/katedra/lide/">učím v Praze na VŠE</a>. Účast ve start-upu GoodData posílila můj vztah k práci s daty a zajistila cenný produktový nadhled. Hodně a rád čtu a o knihách i píšu, hlavně do <a href="http://www.logrmagazin.cz/">magazínu Lógr</a>.</p>
             </div>
-            <img src="/img/jakub-goldmann-sedici.png" alt="Jakub Goldmann mluví do mikrofonu" class="img-fluid d-block">
         </div>
+        <img src="/img/jakub-goldmann-sedici.png" alt="Jakub Goldmann mluví do mikrofonu" class="img-fluid d-block mx-auto C-photo">
     </div>
 </section>
 
 <section id="kontakt">
-    <div class="container-md">
+    <div class="container-fluid C-container-narrow">
         <h2 class="mt-35">Jak mě kontaktovat?</h2>
-        <p class="d-flex justify-content-center mt-35 mb-45">
-            <a class="C-btn-icon C-btn-icon-phone btn btn-primary mr-30" href="tel:+420777907719">
-                <span class="sr-only">+420777907719</span>
+        <p class="d-flex flex-wrap justify-content-center justify-content-sm-start mt-35 mb-45">
+            <a class="C-btn-icon C-btn-icon-phone btn btn-primary mr-30 mb-30" href="tel:+420777907719">
+                <span class="d-none d-sm-block">+420 777 907 719</span>
             </a>
             <a class="C-btn-icon C-btn-icon-envelope btn btn-outline-secondary" href="mailto:jakub.goldmann@gmail.com">
-                <span class="sr-only">jakub.goldmann@gmail.com</span>
+                <span class="d-none d-sm-block">jakub.goldmann@gmail.com</span>
             </a>
         </p>
 
@@ -122,7 +123,7 @@
 </section>
 
 <section>
-    <div class="container-md">
+    <div class="container-fluid C-container-narrow">
         <h2 class="mt-35">Na jakých sítích mě najdete?</h2>
         <div class="C-socnets">
             <a class="C-socnets-socnet C-socnets-socnet-linkedin" href="https://www.linkedin.com/in/jakubgoldmann/">LinkedIn</a>
@@ -133,10 +134,8 @@
 </section>
 
 <section class="C-external-links">
-    <div class="container-md">
+    <div class="container-fluid C-container-narrow">
         <h2>Chcete se o mě ještě něco dozvědět?</h2>
-
-        <h3>Goldmann / Švejda Goldmann</h3>
 
         <ul>
             <li>
@@ -255,3 +254,4 @@
 
 </body>
 </html>
+
